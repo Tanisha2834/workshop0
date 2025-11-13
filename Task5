@@ -1,0 +1,7 @@
+import matplotlib.pyplot as plt
+
+plt.scatter(study_hours, sleep_hours, color='blue')
+plt.title("Study vs Sleep Pattern")
+plt.xlabel("Study Hours")
+plt.ylabel("Sleep Hours")
+plt.show()
