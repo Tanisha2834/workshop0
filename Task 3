@@ -1,0 +1,2 @@
+study_minutes = [study * 60 for study, _, _ in time_data]
+print(study_minutes)
