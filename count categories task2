@@ -1,0 +1,3 @@
+print("Low Study Days:", len(low))
+print("Moderate Study Days:", len(moderate))
+print("High Study Days:", len(high))
