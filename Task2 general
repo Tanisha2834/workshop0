@@ -1,0 +1,12 @@
+def generate_permutations(s):
+    if len(s) <= 1:
+        return [s]
+    perms = []
+    for i in range(len(s)):
+        for p in generate_permutations(s[:i] + s[i+1:]):
+            new_perm = s[i] + p
+            if new_perm not in perms:
+                perms.append(new_perm)
+    return perms
+
+print(generate_permutations("abc"))
