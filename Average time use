@@ -1,0 +1,11 @@
+study_hours = [s for s, _, _ in time_data]
+entertainment_hours = [e for _, e, _ in time_data]
+sleep_hours = [sl for _, _, sl in time_data]
+
+avg_study = sum(study_hours) / len(study_hours)
+avg_entertainment = sum(entertainment_hours) / len(entertainment_hours)
+avg_sleep = sum(sleep_hours) / len(sleep_hours)
+
+print(f"Average Study Hours: {avg_study:.2f}")
+print(f"Average Entertainment Hours: {avg_entertainment:.2f}")
+print(f"Average Sleep Hours: {avg_sleep:.2f}")
